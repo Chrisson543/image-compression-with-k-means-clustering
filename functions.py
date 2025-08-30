@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import random
 import numpy as np
 from PIL import Image
+from settings import *
 
 
 def show_images(img1, img2, title1="Original", title2="Compressed"):
@@ -53,7 +54,7 @@ def calculate_average_center(X, X_clusters, center_points):
     return avg_points
 
 
-def save_with_pillow(img, filename="compressed.png"):
+def save_with_pillow(img, filename=f"{n_center_points}_centroids.png"):
     """
     Save an image using Pillow.
     img: numpy array (H, W, 3) or (H, W, 4)
@@ -65,7 +66,7 @@ def save_with_pillow(img, filename="compressed.png"):
     print(f"Saved with Pillow → {filename}")
 
 
-def save_with_matplotlib(img, filename="compressed.png"):
+def save_with_matplotlib(img, filename=f"{n_center_points}_centroids.png"):
     """
     Save an image using Matplotlib.
     img: numpy array (H, W, 3) or (H, W, 4)
@@ -74,4 +75,5 @@ def save_with_matplotlib(img, filename="compressed.png"):
     if img.dtype != np.uint8 and img.max() > 1:
         img = (img / 255.0).astype(float)  # scale to [0,1] if float in 0–255
     plt.imsave(filename, img)
+
     print(f"Saved with Matplotlib → {filename}")
