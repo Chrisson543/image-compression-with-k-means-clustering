@@ -1,0 +1,1 @@
+n_center_points = 4
