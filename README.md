@@ -1,14 +1,14 @@
 # image-compression-with-k-means-clustering
 My implementation of Image compression with K-means clustering in python
 
-Main image (2,909 KB)
+Main image (1,642 KB)
 ![Compressed Image](fruits.png)
 
-Compressed with 4 centroids (171 KB)
-![Compressed Image](4_centroids.png)
+Compressed with 4 centroids (80 KB)
+![Compressed Image](4-centroids.png)
 
-Compressed with 8 centroids (353 KB)
-![Compressed Image](8_centroids.png)
+Compressed with 8 centroids (133 KB)
+![Compressed Image](8-centroids.png)
 
-Compressed with 16 centroids (708 KB)
-![Compressed Image](16_centroids.png)
+Compressed with 16 centroids (218 KB)
+![Compressed Image](16-centroids.png)
