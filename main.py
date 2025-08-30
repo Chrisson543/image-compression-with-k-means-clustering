@@ -5,7 +5,7 @@ from functions import *
 from settings import *
 
 
-img = mpimg.imread("tree.png")
+img = mpimg.imread("fruits.png")
 original_shape = img.shape
 X_img = np.reshape(img, (img.shape[0] * img.shape[1], 3))
 new_img = np.zeros(X_img.shape)
@@ -26,4 +26,5 @@ new_img = center_points[X_clusters]
 save_with_matplotlib(new_img.reshape(original_shape))
 
 show_plot(X_img, center_points)
+
 show_images(X_img.reshape(original_shape), new_img.reshape(original_shape))
